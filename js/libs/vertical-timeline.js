@@ -1,4 +1,5 @@
-jQuery(document).ready(function($){
+function initTimeline(){
+  console.log('initTimeline called');
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
@@ -23,4 +24,4 @@ jQuery(document).ready(function($){
 			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 		});
 	}
-});
+};

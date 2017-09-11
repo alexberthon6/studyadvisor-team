@@ -14,6 +14,7 @@
 			$(document).ready(function(){
 				self.build();
 				self.events();
+        initTimeline();
 			});
 
 		},
@@ -338,8 +339,9 @@
 		    afterAction: function( carousel ) {
 		    	
 		    	var newBg = carousel.find('.item').eq( this.owl.currentItem ).data('bg'),
+          
 					$parentSection = carousel.parents('.section').css('background-image', 'url(' + newBg + ')');
-		    	
+
 					$('#team .team-pagination a').removeClass('current');
 					$('#team .team-pagination a').eq( this.owl.currentItem ).addClass('current');
 
@@ -370,6 +372,7 @@
 				
 				$pagination.on( 'click', function() {
 					
+          initTimeline();
 					var target = $(this).attr('href');
 					var $target = $( target );
 					$tabs.find('.service-item').hide().removeClass('selected');
