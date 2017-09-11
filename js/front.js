@@ -90,8 +90,7 @@
 
 			// Re-init some sections of window resize
 			$( window ).on( 'resize', function() {
-				self.setupHeroSections();
-				self.setupFooter();			
+				self.setupHeroSections();	
 				self.setupHomeSections();	
 			});
 
@@ -406,11 +405,11 @@
 			if( $('body.home-agency').length ) {
 				
 				self.preloadImages([
-			    'images/demo-images/home_1_slider_1.jpg',
+/*			    'images/demo-images/home_1_slider_1.jpg',
 			    'images/demo-images/home_1_slider_2.jpg',
 			    'images/demo-images/home_1_slider_3.jpg',
 			    'images/demo-images/home_1_slider_4.jpg',
-			    'images/demo-images/home_1_slider_5.jpg'
+			    'images/demo-images/home_1_slider_5.jpg'*/
 				]);
 				
 			}
